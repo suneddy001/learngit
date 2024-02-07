@@ -6,41 +6,29 @@ $ git config --global user.email "email@example.com"
 注意git config命令的--global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。
 
 
-第一步，创建版本库
-
+创建版本库
+第一步
 $ mkdir learngit
 $ cd learngit
 $ pwd
 /Users/michael/learngit
-
 pwd命令用于显示当前目录。在我的Mac上，这个仓库位于/Users/michael/learngit。
 
-第二步，通过git init命令把这个目录变成Git可以管理的仓库：
+第二步
+git init 初始化一个Git仓库
 
-$ git init
-Initialized empty Git repository in /Users/michael/learngit/.git/
 
-把文件添加到版本库
-
-第一步，用命令git add告诉Git，把文件添加到仓库：
-$ git add readme.txt
-
-第二步，用命令git commit告诉Git，把文件提交到仓库：
-$ git commit -m "wrote a readme file"
-
-小结
-初始化一个Git仓库，使用git init命令。
 添加文件到Git仓库，分两步：
-使用命令git add <file>，注意，可反复多次使用，添加多个文件；
-使用命令git commit -m <message>，完成。
+git add <file> 可反复多次使用，添加多个文件；
+git commit -m <message>
 
+git status 工作区的状态, 告诉你有文件被修改过
+git diff 可以查看修改内容
 
-
-要随时掌握工作区的状态，使用git status命令。
-如果git status告诉你有文件被修改过，用git diff可以查看修改内容。
-
-
-
+HEAD指向的版本就是当前版本
+git reset --hard commit_id 版本的历史之间穿梭
+git log可以查看提交历史，以便确定要回退到哪个版本。
+git reflog查看命令历史，以便确定要回到未来的哪个版本。
 
 
 
