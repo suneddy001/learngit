@@ -30,9 +30,13 @@ git reset --hard commit_id 版本的历史之间穿梭
 git log可以查看提交历史，以便确定要回退到哪个版本。
 git reflog查看命令历史，以便确定要回到未来的哪个版本。
 
+viewing a single git commit’s history
+git show <commit-hash>
+https://www.warp.dev/terminus/git-commit-history
 
+Changing an Older or Multiple Commits
+git rebase -i HEAD~5
+https://linuxize.com/post/change-git-commit-message/
 
-
-
-
-
+exit Vim (:wq)
+https://stackoverflow.com/questions/4708645/vim-for-windows-what-do-i-type-to-save-and-exit-from-a-file
