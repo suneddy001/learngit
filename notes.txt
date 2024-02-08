@@ -62,8 +62,8 @@ $ git checkout -- test.txt
 恢复文件到版本库最新版本
 
 
-
-
+What "Remote Origin Already Exists" Error Means and How To Fix It
+https://www.cloudbees.com/blog/remote-origin-already-exists-error
 
 
 
