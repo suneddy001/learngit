@@ -41,9 +41,26 @@ https://linuxize.com/post/change-git-commit-message/
 exit Vim (:wq)
 https://stackoverflow.com/questions/4708645/vim-for-windows-what-do-i-type-to-save-and-exit-from-a-file
 
+
 管理修改
 第一次修改 -> git add -> 第二次修改 -> git add -> git commit
 每次修改，如果不用git add到暂存区，那就不会加入到commit中。
+
+
+撤销修改
+场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
+场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD <file>，就回到了场景1，第二步按场景1操作。
+
+
+
+
+
+
+
+
+
+
+
 
 
 
