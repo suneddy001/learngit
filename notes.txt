@@ -40,3 +40,12 @@ https://linuxize.com/post/change-git-commit-message/
 
 exit Vim (:wq)
 https://stackoverflow.com/questions/4708645/vim-for-windows-what-do-i-type-to-save-and-exit-from-a-file
+
+管理修改
+第一次修改 -> git add -> 第二次修改 -> git add -> git commit
+每次修改，如果不用git add到暂存区，那就不会加入到commit中。
+
+
+
+
+
