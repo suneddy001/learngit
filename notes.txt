@@ -56,7 +56,7 @@ https://stackoverflow.com/questions/4708645/vim-for-windows-what-do-i-type-to-sa
 
 命令git rm用于删除一个文件。
 
-删错了
+删错了 必须在commit之前操作
 $ git restore --staged test.txt
 $ git checkout -- test.txt
 恢复文件到版本库最新版本
