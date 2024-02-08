@@ -72,6 +72,23 @@ https://www.cloudbees.com/blog/remote-origin-already-exists-error
 "failed to push some refs to [remote repo]" error
 $ git pull origin main
 $ git push -u origin main
+https://www.freecodecamp.org/news/error-failed-to-push-some-refs-to-how-to-fix-in-git/
+
+
+
+How to Add a Git Commit Message
+
+Method 1: Using -m flag multiple times
+e.g:
+git commit index.js -m "Note the Changes" -m "- Fixed a bug" 
+
+Method 2: Using quotes in the shell
+e.g:
+$ git commit index.js -m "My Changes
+- Fixed a critical bug
+- Probably added more bugs
+"
+https://www.shells.com/l/en-US/tutorial/How-to-Add-a-Git-Commit-Message
 
 
 
