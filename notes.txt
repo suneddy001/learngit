@@ -52,10 +52,14 @@ https://stackoverflow.com/questions/4708645/vim-for-windows-what-do-i-type-to-sa
 场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD <file>，就回到了场景1，第二步按场景1操作。
 
 
+删除文件
 
+命令git rm用于删除一个文件。
 
-
-
+删错了
+$ git restore --staged test.txt
+$ git checkout -- test.txt
+恢复文件到版本库最新版本
 
 
 
