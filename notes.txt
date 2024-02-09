@@ -81,6 +81,8 @@ $ git remote -v
 删除远程库
 $ git remote rm <name>
 
+改变分支名称
+$ git branch (-m | -M) [<oldbranch>] <newbranch>
 
 
 Multi-line Git Commit Message
