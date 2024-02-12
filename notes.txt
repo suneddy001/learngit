@@ -116,6 +116,45 @@ $ git branch -d <name>
 $ git log --graph --pretty=oneline --abbrev-commit
 
 
+分支管理策略
+
+强制禁用Fast forward模式
+$ git merge --no-ff -m "merge with no-ff" dev
+--no-ff参数，表示禁用Fast forward
+
+
+Bug分支
+
+储藏当前工作现场
+$ git stash
+
+假定需要在master分支上修复，就从master创建临时分支
+$ git checkout master
+
+$ git checkout -b issue-101
+修复完成
+
+回到dev分支干活
+$ git switch dev
+
+看看git stash list
+$ git stash list
+
+Git把stash内容存在某个地方了，但是需要恢复一下，有两个办法：
+方法一
+恢复
+$ git stash apply
+删除
+$ git stash drop
+
+方法二
+恢复的同时删除
+$ git stash pop，
+
+在master分支上修复的bug，想要合并到当前dev分支，可以用：
+$ git cherry-pick <commit>
+
+
 Multi-line Git Commit Message
 
 Method 1: Using -m flag multiple times
@@ -129,8 +168,6 @@ $ git commit index.js -m "My Changes
 - Probably added more bugs
 "
 https://www.shells.com/l/en-US/tutorial/How-to-Add-a-Git-Commit-Message
-
-
 
 
 error
