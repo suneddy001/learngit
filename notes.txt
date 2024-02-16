@@ -155,6 +155,14 @@ $ git stash pop，
 $ git cherry-pick <commit>
 
 
+Feature分支
+开发一个新feature，最好新建一个分支；
+如果要丢弃一个没有被合并过的分支，可以通过命令强行删除。
+$ git branch -D <name>
+
+
+
+
 Multi-line Git Commit Message
 
 Method 1: Using -m flag multiple times
